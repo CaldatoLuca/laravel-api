@@ -19,7 +19,8 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    //tramite la variabile in emv decido chi puo accedere ai miei dati, metto url del mio sito
+    'allowed_origins' => [env('FRONTEND_URL', 'http://localhost')],
 
     'allowed_origins_patterns' => [],
 
