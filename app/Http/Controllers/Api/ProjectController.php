@@ -11,7 +11,13 @@ class ProjectController extends Controller
     public function index()
     {
         //array con tutti i progetti
-        $projects = Project::all();
+        // $projects = Project::all();
+
+        //array con anche type e technologies paginati
+        // $projects = Project::with(['type', 'technologies'])->paginate(4);
+
+        //array con anche type e technologies non paginati
+        $projects = Project::with(['type', 'technologies'])->get();
 
         //risultato: array json, in data ho i progetti, success è un ulteriore  campo che indica se la richiesta ha avuto esito positivo o meno (
         return response()->json([
