@@ -1,25 +1,9 @@
-ToDo
+# Laravel API
 
-Bottone elimina immagine in edit
+Implementazione di un controller Api/ProjectController per gestire le chiamate api da richiamare nel progetto in vite.
 
-Filtro project per type
+-   creo il controller Api/ProjectController
 
-# Relazione many to many
+-   in un metodo index raccolgo tutti i projects e do come return una response con l' array. (restituisce un json)
 
-Una technology ha tanti project, un project ha tante technology
-
--   creo il pacchetto per Technology `php artisan make:model -rmsR` name Technology
-
--   facendo coi però devo spostare il controller in admin e cambiare l' import nel model
-
--   inserisco i campi title e slug nella migration e la runno
-
--   creo il seeder con le technology
-
--   creo migrazione per tabella pivot, nomi tabelle in ordine alfabetico (`php artisan make:migration create_project_technology_table`)
-
--   istruisco i model in base alla relazione
-
--   gestisco inserimento e creazione delle technoly in create project
-
--   semplice parte di crud e gestione dei valori e dei casi, avendo un array derivante da una select dovrò agire diversamente (ciclo sull' array per avere ogni technology associata)
+-   in api.php creo la rotta per accedere ai dati passati (attenzione: la chiamata in get avrà come parametro api/ preimpoistato da Laravel)
