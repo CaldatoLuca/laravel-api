@@ -6,7 +6,10 @@
 
 @section('content')
     <div id="index" class="container">
-        <h1 class="mb-5">Projects List</h1>
+        <div class="d-flex align-items-center justify-content-between mb-5">
+            <h1>Projects List</h1>
+            <h4>You have {{ count($projects) }} projects</h4>
+        </div>
 
         @if ($projects != '[]')
             <table class="table">
