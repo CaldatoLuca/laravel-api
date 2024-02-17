@@ -25,4 +25,16 @@ class ProjectController extends Controller
             "data" => $projects
         ]);
     }
+
+    public function show(string $slug)
+    {
+
+        //prendo il project con slug uguale a quello passato in get, first e non get
+        $project = Project::where('slug', $slug)->first();
+
+        return response()->json([
+            "success" => true,
+            "data" => $project
+        ]);
+    }
 }
