@@ -30,7 +30,7 @@ class ProjectController extends Controller
     {
 
         //prendo il project con slug uguale a quello passato in get, first e non get
-        $project = Project::where('slug', $slug)->first();
+        $project = Project::where('slug', $slug)->with('type', 'technologies')->first();
 
         return response()->json([
             "success" => true,
