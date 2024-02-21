@@ -14,7 +14,7 @@ class ProjectController extends Controller
         // $projects = Project::all();
 
         //array con anche type e technologies paginati
-        $projects = Project::with(['type', 'technologies'])->paginate(9);
+        $projects = Project::with(['type', 'technologies'])->paginate(6);
 
         //array con anche type e technologies non paginati
         // $projects = Project::with(['type', 'technologies'])->get();
