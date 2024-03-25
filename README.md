@@ -1,6 +1,6 @@
 # Laravel-api
 
-Laravel-api è il backend gestionale del mio portfolio personale, disponibile su [questa repository](link alla repo), dove gestisco tutti i miei progetti. Questa applicazione è costruita utilizzando il framework Laravel e include un sistema di autenticazione per garantire la sicurezza delle operazioni.
+Laravel-api è il backend gestionale del mio portfolio personale, disponibile su [questa repository](https://github.com/CaldatoLuca/portfolio), dove gestisco tutti i miei progetti. Questa applicazione è costruita utilizzando il framework Laravel e include un sistema di autenticazione per garantire la sicurezza delle operazioni.
 
 ## Caratteristiche
 
